@@ -14,7 +14,7 @@ public class EndpointHitMapper {
 
     public static EndpointHit toEndpointHit(EndpointHitDto endpointHitDto) {
         return EndpointHit.builder()
-                .id(null)
+                .id(endpointHitDto.getId())
                 .app(endpointHitDto.getApp())
                 .ip(endpointHitDto.getIp())
                 .uri(endpointHitDto.getUri())
@@ -25,6 +25,7 @@ public class EndpointHitMapper {
 
     public static EndpointHitDto toEndpointHitDto(EndpointHit endpointHit) {
         return EndpointHitDto.builder()
+                .id(endpointHit.getId())
                 .app(endpointHit.getApp())
                 .ip(endpointHit.getIp())
                 .uri(endpointHit.getUri())

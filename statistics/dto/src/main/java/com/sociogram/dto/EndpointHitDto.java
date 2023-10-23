@@ -12,6 +12,8 @@ import javax.validation.constraints.NotBlank;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EndpointHitDto {
+
+    private Long id;
     @NotBlank
     private String app;
     @NotBlank
