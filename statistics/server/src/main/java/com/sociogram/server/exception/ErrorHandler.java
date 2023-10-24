@@ -13,8 +13,8 @@ public class ErrorHandler {
     @ExceptionHandler
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ErrorResponse illegalArgumentExceptionHandler(final IllegalArgumentException e) {
-        log.error("Ошибка при обработке недопустимых аргументов: {}", e.getMessage());
-        return new ErrorResponse("Недопустимые аргументы: " + e.getMessage());
+        log.error("Error processing invalid arguments: {}", e.getMessage());
+        return new ErrorResponse("Invalid arguments: " + e.getMessage());
     }
 
 }
