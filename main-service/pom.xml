@@ -27,14 +27,14 @@
         <dependency>
             <groupId>com.sociogram</groupId>
             <artifactId>dto</artifactId>
-            <version>${project.version}</version>
+            <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>com.sociogram</groupId>
             <artifactId>client</artifactId>
-            <version>${project.version}</version>
+            <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
 
